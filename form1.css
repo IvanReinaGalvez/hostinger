@@ -1,0 +1,175 @@
+body 
+{
+	background-color: #242424;
+}
+
+/*Hacemos que el padding y border se incluya en el width total del elemento*/
+* 
+{
+    box-sizing: border-box;
+}
+
+/*Definicion tamaño de las columnas*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-2-margin {width: 16.66%; margin:0% 2%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+div .col-2{	padding-left: 0;}
+
+/*todas las colums flotan a la izquierda y tienen un padding*/
+[class*="col-"] 
+{
+    float: left;
+    padding: 1%;
+   /*border: 1px solid red;*/
+}
+
+.row
+{
+	margin: 0 2%;
+}
+/*evitamos que despues de cada fila pueda posicionarse accidentalmente cualquier elemento,
+ ignorando la existencia de la fila y desconfiogurando la apariencia de la pagina*/
+.row:after 
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+.rowSeparator
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	margin:1% 0%;
+}
+
+#contenido
+{
+	background-color: #CCCCCC;
+	width: 70%;
+	margin: 1% auto;
+	overflow: hidden;
+	border-radius: 5px;
+	height: 95%;
+}
+#contenido div
+{
+	font-weight: bold;
+}
+
+input
+{
+	font-size: 1.2em;
+}
+
+#cabecera
+{
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 3%;
+    margin: 0%;
+}
+
+#footer
+{
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 1%;
+    margin: 0%;
+    text-align: center;
+}
+
+h1
+{
+	font-family: verdana, Georgia, Serif;
+	margin-left: 2%;
+}
+
+
+.notRequired
+{
+	display: none;
+}
+
+.required
+{
+	font-weight: bolder;
+	color: red;
+}
+
+
+#botonera
+{
+
+	margin: 0 auto;
+    text-align: center;
+    width: 100%;  
+    padding: 5% 0%;
+}
+
+#btnLeft, #btnRight 
+{
+	background: #ccc;
+	display: inline-block;    
+	padding: 2%;   
+	border:none;
+	font-weight: bold;
+	color: white;
+	border-radius: 2px;
+	background: rgb(140,8,206); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(140,8,206,1) 0%, rgba(139,49,196,1) 50%, rgba(153,51,204,1) 51%, rgba(181,140,204,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(140,8,206,1)), color-stop(50%,rgba(139,49,196,1)), color-stop(51%,rgba(153,51,204,1)), color-stop(100%,rgba(181,140,204,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(140,8,206,1) 0%,rgba(139,49,196,1) 50%,rgba(153,51,204,1) 51%,rgba(181,140,204,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(140,8,206,1) 0%,rgba(139,49,196,1) 50%,rgba(153,51,204,1) 51%,rgba(181,140,204,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(140,8,206,1) 0%,rgba(139,49,196,1) 50%,rgba(153,51,204,1) 51%,rgba(181,140,204,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(140,8,206,1) 0%,rgba(139,49,196,1) 50%,rgba(153,51,204,1) 51%,rgba(181,140,204,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c08ce', endColorstr='#b58ccc',GradientType=0 ); /* IE6-9 */
+}
+
+#btnLeft:hover, #btnRight:hover 
+{
+	background: #ccc;
+	display: inline-block;    
+	padding: 2%;   
+	border:none;
+	color: black;
+	background: rgb(153,51,204); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(153,51,204,1) 0%, rgba(179,132,204,1) 56%, rgba(179,132,204,1) 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,51,204,1)), color-stop(56%,rgba(179,132,204,1)), color-stop(99%,rgba(179,132,204,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(153,51,204,1) 0%,rgba(179,132,204,1) 56%,rgba(179,132,204,1) 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(153,51,204,1) 0%,rgba(179,132,204,1) 56%,rgba(179,132,204,1) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(153,51,204,1) 0%,rgba(179,132,204,1) 56%,rgba(179,132,204,1) 99%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(153,51,204,1) 0%,rgba(179,132,204,1) 56%,rgba(179,132,204,1) 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9933cc', endColorstr='#b384cc',GradientType=0 ); /* IE6-9 */
+}
+
+.email
+{
+	font-weight: normal;
+	font-family: helvetica;
+}
+/*Para moviles*/
+@media only screen and (max-width: 768px) {
+    [class*="col-"] 
+    {width: 100%;}
+
+    .col-2-margin {margin:0%;}
+    .col-6m{width: 50%;}
+	#contenido div .col-6m 	
+	{
+		font-weight: normal;
+		border-bottom: 1px solid gray;
+		border-top: 1px solid gray;
+	}
+}

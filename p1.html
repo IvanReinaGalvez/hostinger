@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Página 1</title>
+	<link rel="stylesheet" href="form1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<h1 id="cabecera">Null Pointer Developer</h1>
+	<div id="contenido" class="row">
+		<h1> Reg&iacute;strese aqu&iacute;</h1>
+		<form id="form" action="p2.php" method="post" accept-charset="utf-8">
+
+<!-- DATOS PERSONALES -->
+			<fieldset class="row">
+			    <legend>Datos Personales:</legend>
+						<div id="nombre" class="row">
+							<div class="col-3">Nombre <span class="required">*</span></div>
+							<input class="col-5" type="text" name="nombre" value="" size="40" placeholder="Introduzca su nombre" required>
+						</div>
+
+						<div id="apellido" class="row">
+							<div class="col-3">Apellidos <span class="required">*</span></div>
+							<input class="col-5" type="text" name="apellido" value="" size="40" placeholder="Introduzca su apellido" required>
+						</div>
+						
+						<div id="email" class="row">
+							<div class="col-3">Email <span class="required">*</span></div>
+							<input class="col-5" type="email" name="email" value="" size="40" placeholder="example@hotmail.com" required>
+						</div>
+
+						<div id="sexo" class="row">
+							<div class="col-3">Sexo<span class="notRequired"></span></div>
+							<div class="col-2 col-6m">Hombre<input type="radio" name="sex" value="H"></div>
+							<div class="col-2 col-6m">Mujer<input type="radio" name="sex" value="M"></div>
+						</div>
+
+						<div id="fnac" class="row">
+							<div class="col-3">Fecha nacimiento <span class="required">*</span></div>
+							
+							<select name="diaFnac" class="col-1" required>
+								<option value="1">01</option>
+								<option value="2">02</option>
+								<option value="3">03</option>
+								<option value="4">04</option>
+							</select>
+
+							<select name="mesFnac" class="col-2-margin" required>
+								<option value="1">Enero</option>
+								<option value="2">Febrero</option>
+								<option value="3">Marzo</option>
+								<option value="4">Abril</option>
+								<option value="5">Mayo</option>
+								<option value="6">Junio</option>
+								<option value="7">Julio</option>
+								<option value="8">Agosto</option>
+								<option value="9">Septiembre</option>
+								<option value="10">Octubre</option>
+								<option value="11">Noviembre</option>
+								<option value="12">Diciembre</option>
+							</select>
+
+							<select name="anioFnac" class="col-1" required>
+								<option value="1988">1988</option>
+								<option value="1993">1993</option>
+								<option value="2000">2000</option>
+								<option value="2001">2001</option>
+							</select>
+						</div>
+
+						<div id="tlf" class="row" class="col-2">
+							<div class="col-3">Tel&eacute;fono<span class="notRequired">*</span></div>
+							<input class="col-3 tlf" type="text" name="tlf" value="" placeholder="Numero de telefono">
+						</div>
+			</fieldset>
+<!-- FILA SEPARADORA -->
+			<div class="rowSeparator"></div>
+
+<!-- DATOS USUARIO -->
+			<fieldset class="row">
+			    <legend>Datos de usuario:</legend>
+			    <div id="usrName" class="row">
+					<div class="col-3">Nombre de usuario<span class="required">*</span></div>
+					<input class="col-5" type="text" name="usrName" value="" size="20" placeholder="piuux_user_69" required>			
+				</div>	
+
+				<div id="usrPass" class="row">
+					<div class="col-3">Contrase&ntilde;a<span class="required">*</span></div>
+					<input class="col-5" type="password" name="usrPass" value="" placeholder="Password" required>		
+				</div>	
+
+				<div id="usrPassCheck" class="row">
+					<div class="col-3">Repetir Contrase&ntilde;a<span class="required">*</span></div>
+					<input class="col-5" type="password" name="usrPassCheck" value="" placeholder="Repeat password" required>		
+				</div>	
+				<div id="usrImg" class="row">
+					<div class="col-3">Avatar<span class="notRequired">*</span></div>
+					<input class="col-9" type="file" name="usrImg" value="" placeholder="">
+				</div>
+			</fieldset>
+            
+<!-- FILA SEPARADORA -->
+			<div class="rowSeparator"></div>
+            
+<!-- NAVEGADORES -->
+			<fieldset class="row">
+				<legend>Navegadores utilizados</legend>
+				
+				<input type="checkbox" name="navegador[]" value="Chrome">
+				Chrome
+				<input type="checkbox" name="navegador[]" value="Firefox">
+				Firefox
+				<input type="checkbox" name="navegador[]" value="Edge">
+				Edge
+				<input type="checkbox" name="navegador[]" value="Opera">
+				Opera
+				<input type="checkbox" name="navegador[]" value="Safari">
+				Safari
+			</fieldset>
+			
+			<div id="botonera" class="row">
+				<button id="btnLeft" class="btn" type="submit"> Enviar </button>
+				<button id="btnRight" class="btn" type="reset"> Borrar </button>
+			</div>
+
+		</form>
+	</div>
+
+	<div id="footer" class="row">
+		<div class="col-12">
+			Todos los derechos reservados.
+		</div>
+	</div>
+	
+</body>
+</html>
